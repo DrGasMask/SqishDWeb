@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Results - SqishDWeb</title>
+<link rel="stylesheet" href="results.css">
+</head>
+<body>
+
+<header>
+    <h2 class="logo">
+        <span class="red">Sqish</span><span class="blue">DWeb</span>
+        <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
+    </h2>
+
+    <form id="topSearchForm">
+        <input type="text" id="topSearchInput" placeholder="Search SqishDWeb..." />
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="tabs">
+        <div class="tab active" data-tab="web">Web</div>
+        <div class="tab" data-tab="images">Images</div>
+    </div>
+</header>
+
+<main>
+    <div class="query" id="queryText"></div>
+
+    <div id="results"></div>
+
+    <div id="pagination" class="pagination"></div>
+</main>
+
+<!-- High-res image overlay -->
+<div id="imageOverlay" class="image-overlay">
+    <span id="overlayClose" class="overlay-close">&times;</span>
+    <img id="overlayImage" src="" alt="">
+</div>
+
+<script src="results.js"></script>
+</body>
+</html>
